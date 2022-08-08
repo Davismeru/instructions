@@ -5,29 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
+        <!-- header content -->
         <header>
             <h1>SURVEY APP</h1>
             <h4>project by Davis</h4>
         </header>
 
+        <!-- survey questions section -->
         <section>
             <h2>What is your <span id="specifics">first name</span></h2>
             <div class="section-content">
                 <input type="text" placeholder="First name" class="text-input">
                 <div class="buttons">
-                <input type="button" value="Previous" class="btn prev">
-                <input type="button" value="Next" class="btn next">
-            </div>
+                    <div class="prev-next">
+                        <input type="button" value="Previous" class="btn prev">
+                        <input type="button" value="Next" class="btn next">
+                    </div>
+                    <input type="button" value="Profiles" class="btn profiles-btn">
+                </div>
             </div>
         </section>
         <input type="button" value="clearlocal" class="clear">
 
+        <!-- popup dialogue box after submitting the survey -->
         <div class="notification-popup">
             <h3>details submitted succesfully</h3>
+        </div>
+
+        <!-- slide showing all undertaken surveys (profiles) -->
+        <div class="profiles-slide">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <div class="slide-top">
+                        <div class="search-bar">
+                            <input type="text" placeholder="search">
+                            <i class="fa-solid fa-search"></i>
+                        </div>
+                        <div class="slide-logo">
+                            <h4>Survey<span>App</span></h4>
+                            <h5>project by davis</h5>
+                        </div>
+                    </div>
+
+                    <div class="list-header">
+                        <h4>Name</h4>
+                        <h4>Id number</h4>
+                        <i class="fa-solid fa-home"></i>
+                    </div>
+                </div>
+
+                <div class="profiles-list">
+                    <!-- <div class="list-content">
+                        <div class="name">
+                            <p>Davis meru</p>
+                        </div>
+
+                        <div class="id-number">
+                            <p>37442124</p>
+                        </div>
+
+                        <div class="profile-link">
+                            <p class="profile-link">see profile</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
         </div>
     </div>
     <script src="main.js"></script>
